@@ -4,6 +4,12 @@ import p from './../img/projects/img-layouts/p.png';
 import pv from './../img/projects/img-layouts/pv.png';
 import zt from './../img/projects/img-layouts/zt.png';
 
+import ltMin from './../img/projects/img-layouts-min/lt.jpg';
+import nfMin from './../img/projects/img-layouts-min/nf.jpg';
+import pMin from './../img/projects/img-layouts-min/p.jpg';
+import pvMin from './../img/projects/img-layouts-min/pv.jpg';
+import ztMin from './../img/projects/img-layouts-min/zt.jpg';
+
 export type TProject = {
   title: string;
   skills: string;
@@ -17,14 +23,14 @@ const projectsLayouts: TProject[] = [
   {
     title: 'Listening time podcast',
     skills: 'HTML, CSS',
-    img: lt,
+    img: ltMin,
     imgBig: lt,
     gitHubRepoLink: 'https://github.com',
     gitHubPagesLink: 'http://podcast.saparovpetr.ru'
   },
   {
     title: 'No focus',
-    img: nf,
+    img: nfMin,
     imgBig: nf,
     skills: 'HTML, CSS',
     gitHubRepoLink: 'https://github.com',
@@ -32,7 +38,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Pulsometr store',
-    img: p,
+    img: pMin,
     imgBig: p,
     skills: 'HTML, CSS, JS',
     gitHubRepoLink: 'https://github.com',
@@ -40,7 +46,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Look at the window',
-    img: pv,
+    img: pvMin,
     imgBig: pv,
     skills: 'HTML, CSS',
     gitHubRepoLink: 'https://github.com',
@@ -48,7 +54,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Closing tag',
-    img: zt,
+    img: ztMin,
     imgBig: zt,
     skills: 'HTML, SCSS',
     gitHubRepoLink: 'https://github.com',
