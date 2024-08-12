@@ -1,14 +1,15 @@
 /* Header */
 .header {
-	padding: 40px 0;
+	padding: 40px 0 0;
 	min-height: 695px;
+	margin-bottom: -70px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	background-color: var(--header-bg);
-	background-image: url('./../../img/header-bg.png');
+	background-image: var(--header-img);
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: center center;

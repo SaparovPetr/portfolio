@@ -11,56 +11,58 @@ const Navbar = () => {
       <div className='container'>
         <div className='nav-row'>
           <NavLink to='/' className='logo'>
-            <strong>Saparov Petr's</strong> portfolio
+            <strong>Portfolio</strong>
           </NavLink>
 
-          <BtnDarkMode />
+          <div className='nav-aria-wrapper'>
+            <BtnDarkMode />
 
-          <ul className='nav-list'>
-            <li className='nav-list__item'>
-              <NavLink
-                to='/'
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                Home
-              </NavLink>
-            </li>
+            <ul className='nav-list'>
+              <li className='nav-list__item'>
+                <NavLink
+                  to='/'
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
 
-            <li className='nav-list__item'>
-              <NavLink
-                to='/apps'
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                Applications
-              </NavLink>
-            </li>
+              <li className='nav-list__item'>
+                <NavLink
+                  to='/apps'
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  My applications
+                </NavLink>
+              </li>
 
-            <li className='nav-list__item'>
-              <NavLink
-                to='/layouts'
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                Layouts
-              </NavLink>
-            </li>
+              <li className='nav-list__item'>
+                <NavLink
+                  to='/layouts'
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  My layouts
+                </NavLink>
+              </li>
 
-            <li className='nav-list__item'>
-              <NavLink
-                to='/contacts'
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
-              >
-                Contacts
-              </NavLink>
-            </li>
-          </ul>
+              <li className='nav-list__item'>
+                <NavLink
+                  to='/contacts'
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  Contacts
+                </NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

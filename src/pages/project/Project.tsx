@@ -1,9 +1,9 @@
 import { useLocation, useParams } from 'react-router-dom';
-import { projectsApps } from '../helpers/projectsAppList';
-import { projectsLayouts } from '../helpers/projectsLayoutList';
+import { projectsApps } from '../../helpers/projectsAppList';
+import { projectsLayouts } from '../../helpers/projectsLayoutList';
 
-import BtnGitHubRepo from '../components/btnGitHubRepo/BtnGitHubRepo';
-import BtnGitHubPages from '..//components/btnGitHubPages/BtnGitHubPages';
+import BtnGitHubRepo from '../../components/btnGitHubRepo/BtnGitHubRepo';
+import BtnGitHubPages from '../../components/btnGitHubPages/BtnGitHubPages';
 
 const Project = () => {
   const { pathname } = useLocation();

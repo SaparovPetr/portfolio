@@ -1,8 +1,8 @@
-import lt from './../img/projects/photo-layouts/lt.png';
-import nf from './../img/projects/photo-layouts/nf.png';
-import p from './../img/projects/photo-layouts/p.png';
-import pv from './../img/projects/photo-layouts/pv.png';
-import zt from './../img/projects/photo-layouts/zt.png';
+import lt from './../img/projects/img-layouts/lt.png';
+import nf from './../img/projects/img-layouts/nf.png';
+import p from './../img/projects/img-layouts/p.png';
+import pv from './../img/projects/img-layouts/pv.png';
+import zt from './../img/projects/img-layouts/zt.png';
 
 export type TProject = {
   title: string;

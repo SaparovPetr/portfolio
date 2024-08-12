@@ -1,9 +1,7 @@
-import React from 'react';
 import './style.css';
 
-// eslint-disable-next-line arrow-body-style
-const Header = () => {
-  return (
+const Home = () => (
+  <>
     <header className='header'>
       <div className='header__wrapper'>
         <h1 className='header__title'>
@@ -15,12 +13,12 @@ const Header = () => {
         <div className='header__text'>
           <p>with passion for learning and creating.</p>
         </div>
-        <a href='#!' className='btn'>
+        <a href='/link-to-file-with-cv' className='btn'>
           Download CV
         </a>
       </div>
     </header>
-  );
-};
+  </>
+);
 
-export default Header;
+export default Home;

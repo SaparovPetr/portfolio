@@ -1,13 +1,13 @@
 import './styles/main.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
-import Home from './pages/Home';
-import ProjectApps from './pages/Projects-Apps';
-import ProjectLayouts from './pages/Projects-Layouts';
-import Project from './pages/Project';
-import Contacts from './pages/Contacts';
-import ScrollToTop from './utils/scrollToTop';
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
+import Home from '../../pages/home/Home';
+import ProjectApps from '../../pages/projects-apps/Projects-Apps';
+import ProjectLayouts from '../../pages/projects-layouts/Projects-Layouts';
+import Project from '../../pages/project/Project';
+import Contacts from '../../pages/contacts/Contacts';
+import ScrollToTop from '../../utils/scrollToTop';
 
 const App = () => (
   <div className='App'>

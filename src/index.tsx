@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './components/app/App';
 import reportWebVitals from './reportWebVitals.js';
 
 const container = document.getElementById('root') as HTMLElement;

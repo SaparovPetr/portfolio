@@ -1,7 +1,7 @@
-import gitTreinerImg from './../img/projects/photo-apps-1/gt.png';
-import stellarburger from './../img/projects/photo-apps-1/sb.png';
-import larek from './../img/projects/photo-apps-1/wl.png';
-import mesto from './../img/projects/photo-apps-1/mr.png';
+import gitTreinerImg from './../img/projects/img-apps/gt.png';
+import stellarburger from './../img/projects/img-apps/sb.png';
+import larek from './../img/projects/img-apps/wl.png';
+import mesto from './../img/projects/img-apps/mr.png';
 
 export type TProject = {
   title: string;
