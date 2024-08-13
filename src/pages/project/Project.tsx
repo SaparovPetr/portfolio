@@ -4,6 +4,7 @@ import { projectsLayouts } from '../../helpers/projectsLayoutList';
 
 import BtnGitHubRepo from '../../components/btnGitHubRepo/BtnGitHubRepo';
 import BtnGitHubPages from '../../components/btnGitHubPages/BtnGitHubPages';
+import { MyImage } from '../../components/myImage/MyImage';
 
 const Project = () => {
   const { pathname } = useLocation();
@@ -18,9 +19,16 @@ const Project = () => {
           <div className='project-details'>
             <h1 className='title-1'>{project.title}</h1>
 
-            <img
+            {/* <img
               src={project.imgBig}
               alt={project.title}
+              className='project-details__cover'
+            /> */}
+
+            <MyImage
+              src={project.imgBig}
+              placeholderSrc={project.img}
+              height='649'
               className='project-details__cover'
             />
 
@@ -46,9 +54,16 @@ const Project = () => {
           <div className='project-details'>
             <h1 className='title-1'>{project.title}</h1>
 
-            <img
+            {/* <img
               src={project.imgBig}
               alt={project.title}
+              className='project-details__cover'
+            /> */}
+
+            <MyImage
+              src={project.imgBig}
+              placeholderSrc={project.imgSmall}
+              height='649'
               className='project-details__cover'
             />
 

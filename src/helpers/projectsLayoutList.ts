@@ -13,7 +13,7 @@ import ztMin from './../img/projects/img-layouts-min/zt.jpg';
 export type TProject = {
   title: string;
   skills: string;
-  img: string;
+  imgSmall: string;
   imgBig: string;
   gitHubRepoLink: string;
   gitHubPagesLink: string;
@@ -23,14 +23,14 @@ const projectsLayouts: TProject[] = [
   {
     title: 'Listening time podcast',
     skills: 'HTML, CSS',
-    img: ltMin,
+    imgSmall: ltMin,
     imgBig: lt,
     gitHubRepoLink: 'https://github.com',
     gitHubPagesLink: 'http://podcast.saparovpetr.ru'
   },
   {
     title: 'No focus',
-    img: nfMin,
+    imgSmall: nfMin,
     imgBig: nf,
     skills: 'HTML, CSS',
     gitHubRepoLink: 'https://github.com',
@@ -38,7 +38,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Pulsometr store',
-    img: pMin,
+    imgSmall: pMin,
     imgBig: p,
     skills: 'HTML, CSS, JS',
     gitHubRepoLink: 'https://github.com',
@@ -46,7 +46,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Look at the window',
-    img: pvMin,
+    imgSmall: pvMin,
     imgBig: pv,
     skills: 'HTML, CSS',
     gitHubRepoLink: 'https://github.com',
@@ -54,7 +54,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Closing tag',
-    img: ztMin,
+    imgSmall: ztMin,
     imgBig: zt,
     skills: 'HTML, SCSS',
     gitHubRepoLink: 'https://github.com',
