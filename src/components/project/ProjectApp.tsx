@@ -1,15 +1,26 @@
 import './style.css';
 import { NavLink } from 'react-router-dom';
-import { TProjectProps } from '@utils-types';
+// import { TProjectProps } from '@utils-types';
 import { MyImage } from '../myImage/MyImage';
 
-const ProjectApp = ({ title, img, index }: TProjectProps) => (
+export type TProjectProps = {
+  title: string;
+  imgS: string;
+  imgXS: string;
+  index: number;
+};
+
+export type TBtnGitHubProps = {
+  link: string;
+};
+
+const ProjectApp = ({ title, imgS, imgXS, index }: TProjectProps) => (
   <NavLink to={`/project-app/${index}`}>
     <li className='project'>
       {/* <img src={img} alt={title} className='project__img' /> */}
       <MyImage
-        src={img}
-        placeholderSrc={img}
+        src={imgS}
+        placeholderSrc={imgXS}
         height='277'
         className='project__img'
       />

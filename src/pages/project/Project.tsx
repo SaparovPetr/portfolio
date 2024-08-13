@@ -27,7 +27,7 @@ const Project = () => {
 
             <MyImage
               src={project.imgBig}
-              placeholderSrc={project.img}
+              placeholderSrc={project.imgSmall}
               height='649'
               className='project-details__cover'
             />

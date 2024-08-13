@@ -3,10 +3,13 @@
 	background-color: var(--project-card-bg);
 	box-shadow: var(--box-shadow);
 	border-radius: 10px;
+	/* min-height: 277px; */
 }
 
 .project__img {
 	border-radius: 10px;
+	min-height: 277px;
+	min-width: 370px;
 }
 
 .project__title {
