@@ -1,9 +1,20 @@
 export type TProjectProps = {
   title: string;
-  img: string;
+  imgS: string;
+  imgXS: string;
   index: number;
 };
 
 export type TBtnGitHubProps = {
   link: string;
+};
+
+export type TProject = {
+  title: string;
+  skills: string;
+  imgMic: string;
+  imgSmall: string;
+  imgBig: string;
+  gitHubRepoLink: string;
+  gitHubPagesLink: string;
 };

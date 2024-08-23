@@ -1,16 +1,14 @@
-import { NavLink } from 'react-router-dom';
 import './style.css';
-import React from 'react';
-import { TProjectProps } from '@utils-types';
+import { NavLink } from 'react-router-dom';
 import { MyImage } from '../myImage/MyImage';
+import { TProjectProps } from '@utils-types';
 
-const ProjectLayout = ({ title, img, index }: TProjectProps) => (
+const ProjectLayout = ({ title, imgS, imgXS, index }: TProjectProps) => (
   <NavLink to={`/project-layout/${index}`}>
     <li className='project'>
-      {/* <img src={img} alt={title} className='project__img' /> */}
       <MyImage
-        src={img}
-        placeholderSrc={img}
+        src={imgS}
+        placeholderSrc={imgXS}
         height='277'
         className='project__img'
       />

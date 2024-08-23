@@ -10,7 +10,8 @@ const ProjectApps = () => (
           <ProjectApp
             key={index}
             title={projectApp.title}
-            img={projectApp.img}
+            imgS={projectApp.imgSmall}
+            imgXS={projectApp.imgMic}
             index={index}
           />
         ))}

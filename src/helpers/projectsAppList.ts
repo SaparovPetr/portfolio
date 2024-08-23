@@ -8,27 +8,26 @@ import stellarburgerMin from './../img/projects/img-apps-min/sb.jpg';
 import larekMin from './../img/projects/img-apps-min/wl.jpg';
 import mestoMin from './../img/projects/img-apps-min/mr.jpg';
 
-export type TProject = {
-  title: string;
-  skills: string;
-  img: string;
-  imgBig: string;
-  gitHubRepoLink: string;
-  gitHubPagesLink: string;
-};
+import gitTreinerImgMic from './../img/projects/img-apps-mic/gt.jpg';
+import stellarburgerMic from './../img/projects/img-apps-mic/sb.jpg';
+import larekMic from './../img/projects/img-apps-mic/wl.jpg';
+import mestoMic from './../img/projects/img-apps-mic/mr.jpg';
+import { TProject } from '@utils-types';
 
 const projectsApps: TProject[] = [
   {
     title: 'GitTreiner',
     skills: 'React, Redux',
-    img: gitTreinerImgMin,
+    imgMic: gitTreinerImgMic,
+    imgSmall: gitTreinerImgMin,
     imgBig: gitTreinerImg,
     gitHubRepoLink: 'https://github.com/SaparovPetr/gitTreiner',
     gitHubPagesLink: 'https://saparovpetr.github.io/gitTreiner/'
   },
   {
     title: 'Stellar Burger',
-    img: stellarburgerMin,
+    imgMic: stellarburgerMic,
+    imgSmall: stellarburgerMin,
     imgBig: stellarburger,
     skills: 'React, Redux',
     gitHubRepoLink: 'https://github.com/SaparovPetr/stellar-burger',
@@ -36,7 +35,8 @@ const projectsApps: TProject[] = [
   },
   {
     title: 'Web-larek',
-    img: larekMin,
+    imgMic: larekMic,
+    imgSmall: larekMin,
     imgBig: larek,
     skills: 'TS',
     gitHubRepoLink: 'https://github.com/SaparovPetr/web-larek-frontend',
@@ -44,7 +44,8 @@ const projectsApps: TProject[] = [
   },
   {
     title: 'Mesto Russia',
-    img: mesto,
+    imgMic: mestoMic,
+    imgSmall: mesto,
     imgBig: mestoMin,
     skills: 'Vanila JS',
     gitHubRepoLink: 'https://github.com/SaparovPetr/mesto-project-ff',

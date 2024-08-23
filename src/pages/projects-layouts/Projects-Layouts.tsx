@@ -10,7 +10,8 @@ const ProjectLayouts = () => (
           <ProjectLayout
             key={index}
             title={projectLayout.title}
-            img={projectLayout.imgSmall}
+            imgS={projectLayout.imgSmall}
+            imgXS={projectLayout.imgMic}
             index={index}
           />
         ))}

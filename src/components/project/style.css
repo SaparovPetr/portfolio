@@ -3,8 +3,6 @@
 	background-color: var(--project-card-bg);
 	box-shadow: var(--box-shadow);
 	border-radius: 10px;
-	min-width: 370px;
-	min-height: 349px;
 }
 
 .project__img {
