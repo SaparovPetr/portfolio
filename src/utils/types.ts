@@ -2,7 +2,6 @@ export type TProjectProps = {
   title: string;
   imgS: string;
   imgXS: string;
-  index: number;
 };
 
 export type TBtnGitHubProps = {

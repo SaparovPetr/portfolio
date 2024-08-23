@@ -5,28 +5,27 @@ import { projectsLayouts } from '../../helpers/projectsLayoutList';
 import BtnGitHubRepo from '../../components/btnGitHubRepo/BtnGitHubRepo';
 import BtnGitHubPages from '../../components/btnGitHubPages/BtnGitHubPages';
 import { MyImage } from '../../components/myImage/MyImage';
+import { memo } from 'react';
 
-const Project = () => {
+const ProjectPage = memo(() => {
   const { pathname } = useLocation();
   const { id } = useParams();
   const orderInTheArrey = Number(id);
+  // console.log(pathname);
 
-  if (pathname.includes('project-app')) {
+  if (pathname.includes('apps')) {
     const project = projectsApps[orderInTheArrey];
+    console.log(project);
+
     return (
       <main className='section'>
         <div className='container'>
           <div className='project-details'>
             <h1 className='title-1'>{project.title}</h1>
 
-            {/* <img
-              src={project.imgBig}
-              alt={project.title}
-              className='project-details__cover'
-            /> */}
-
             <MyImage
               src={project.imgBig}
+              alt={'скриншот проекта'}
               placeholderSrc={project.imgSmall}
               height='649'
               className='project-details__cover'
@@ -46,7 +45,7 @@ const Project = () => {
     );
   }
 
-  if (pathname.includes('project-layout')) {
+  if (pathname.includes('layouts')) {
     const project = projectsLayouts[orderInTheArrey];
     return (
       <main className='section'>
@@ -54,14 +53,9 @@ const Project = () => {
           <div className='project-details'>
             <h1 className='title-1'>{project.title}</h1>
 
-            {/* <img
-              src={project.imgBig}
-              alt={project.title}
-              className='project-details__cover'
-            /> */}
-
             <MyImage
               src={project.imgBig}
+              alt={'скриншот проекта'}
               placeholderSrc={project.imgSmall}
               height='649'
               className='project-details__cover'
@@ -80,6 +74,6 @@ const Project = () => {
       </main>
     );
   }
-};
+});
 
-export default Project;
+export default ProjectPage;
