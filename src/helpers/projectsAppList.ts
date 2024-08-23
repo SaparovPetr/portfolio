@@ -12,23 +12,13 @@ import gitTreinerImgMic from './../img/projects/img-apps-mic/gt.jpg';
 import stellarburgerMic from './../img/projects/img-apps-mic/sb.jpg';
 import larekMic from './../img/projects/img-apps-mic/wl.jpg';
 import mestoMic from './../img/projects/img-apps-mic/mr.jpg';
-
-export type TProject = {
-  title: string;
-  skills: string;
-  imgMic: string;
-  imgSmall: string;
-  imgBig: string;
-  gitHubRepoLink: string;
-  gitHubPagesLink: string;
-};
+import { TProject } from '@utils-types';
 
 const projectsApps: TProject[] = [
   {
     title: 'GitTreiner',
     skills: 'React, Redux',
     imgMic: gitTreinerImgMic,
-
     imgSmall: gitTreinerImgMin,
     imgBig: gitTreinerImg,
     gitHubRepoLink: 'https://github.com/SaparovPetr/gitTreiner',
@@ -37,7 +27,6 @@ const projectsApps: TProject[] = [
   {
     title: 'Stellar Burger',
     imgMic: stellarburgerMic,
-
     imgSmall: stellarburgerMin,
     imgBig: stellarburger,
     skills: 'React, Redux',
@@ -47,7 +36,6 @@ const projectsApps: TProject[] = [
   {
     title: 'Web-larek',
     imgMic: larekMic,
-
     imgSmall: larekMin,
     imgBig: larek,
     skills: 'TS',
@@ -57,7 +45,6 @@ const projectsApps: TProject[] = [
   {
     title: 'Mesto Russia',
     imgMic: mestoMic,
-
     imgSmall: mesto,
     imgBig: mestoMin,
     skills: 'Vanila JS',

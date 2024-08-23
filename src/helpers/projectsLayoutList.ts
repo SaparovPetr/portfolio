@@ -10,19 +10,18 @@ import pMin from './../img/projects/img-layouts-min/p.jpg';
 import pvMin from './../img/projects/img-layouts-min/pv.jpg';
 import ztMin from './../img/projects/img-layouts-min/zt.jpg';
 
-export type TProject = {
-  title: string;
-  skills: string;
-  imgSmall: string;
-  imgBig: string;
-  gitHubRepoLink: string;
-  gitHubPagesLink: string;
-};
+import ltMic from './../img/projects/img-layouts-mic/lt.jpg';
+import nfMic from './../img/projects/img-layouts-mic/nf.jpg';
+import pMic from './../img/projects/img-layouts-mic/p.jpg';
+import pvMic from './../img/projects/img-layouts-mic/pv.jpg';
+import ztMic from './../img/projects/img-layouts-mic/zt.jpg';
+import { TProject } from '@utils-types';
 
 const projectsLayouts: TProject[] = [
   {
     title: 'Listening time podcast',
     skills: 'HTML, CSS',
+    imgMic: ltMic,
     imgSmall: ltMin,
     imgBig: lt,
     gitHubRepoLink: 'https://github.com',
@@ -30,6 +29,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'No focus',
+    imgMic: nfMic,
     imgSmall: nfMin,
     imgBig: nf,
     skills: 'HTML, CSS',
@@ -38,6 +38,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Pulsometr store',
+    imgMic: pMic,
     imgSmall: pMin,
     imgBig: p,
     skills: 'HTML, CSS, JS',
@@ -46,6 +47,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Look at the window',
+    imgMic: pvMic,
     imgSmall: pvMin,
     imgBig: pv,
     skills: 'HTML, CSS',
@@ -54,6 +56,7 @@ const projectsLayouts: TProject[] = [
   },
   {
     title: 'Closing tag',
+    imgMic: ztMic,
     imgSmall: ztMin,
     imgBig: zt,
     skills: 'HTML, SCSS',
