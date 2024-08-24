@@ -1,4 +1,5 @@
 import { useLocation, useParams } from 'react-router-dom';
+
 import { projectsApps } from '../../helpers/projectsAppList';
 import { projectsLayouts } from '../../helpers/projectsLayoutList';
 
@@ -8,15 +9,11 @@ import { MyImage } from '../../components/myImage/MyImage';
 import { memo } from 'react';
 
 const ProjectPage = memo(() => {
+  const { id } = useParams<{ id: string }>();
   const { pathname } = useLocation();
-  const { id } = useParams();
-  const orderInTheArrey = Number(id);
-  // console.log(pathname);
 
   if (pathname.includes('apps')) {
-    const project = projectsApps[orderInTheArrey];
-    console.log(project);
-
+    const project = projectsApps[Number(id)];
     return (
       <main className='section'>
         <div className='container'>
@@ -46,7 +43,7 @@ const ProjectPage = memo(() => {
   }
 
   if (pathname.includes('layouts')) {
-    const project = projectsLayouts[orderInTheArrey];
+    const project = projectsLayouts[Number(id)];
     return (
       <main className='section'>
         <div className='container'>
