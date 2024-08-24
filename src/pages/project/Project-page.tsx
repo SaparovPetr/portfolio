@@ -4,9 +4,9 @@ import { projectsApps } from '../../helpers/projectsAppList';
 import { projectsLayouts } from '../../helpers/projectsLayoutList';
 
 import BtnGitHubRepo from '../../components/btnGitHubRepo/BtnGitHubRepo';
-import BtnGitHubPages from '../../components/btnGitHubPages/BtnGitHubPages';
 import { MyImage } from '../../components/myImage/MyImage';
 import { memo } from 'react';
+import BtnGitHubPages from '../../components/btnGitHubPages/BtnGitHubPages';
 
 const ProjectPage = memo(() => {
   const { id } = useParams<{ id: string }>();
