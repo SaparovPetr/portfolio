@@ -4,9 +4,9 @@ import { projectsApps } from '../../helpers/projectsAppList';
 import { projectsLayouts } from '../../helpers/projectsLayoutList';
 
 import BtnGitHubRepo from '../../components/btnGitHubRepo/BtnGitHubRepo';
+import BtnDeployment from '../../components/btnDeployment/BtnDeployment';
 import { MyImage } from '../../components/myImage/MyImage';
 import { memo } from 'react';
-import BtnGitHubPages from '../../components/btnGitHubPages/BtnGitHubPages';
 
 const ProjectPage = memo(() => {
   const { id } = useParams<{ id: string }>();
@@ -33,7 +33,7 @@ const ProjectPage = memo(() => {
             </div>
 
             <div className='project-details__buttons'>
-              <BtnGitHubPages link={project.gitHubPagesLink} />
+              <BtnDeployment link={project.gitHubPagesLink} />
               <BtnGitHubRepo link={project.gitHubRepoLink} />
             </div>
           </div>
@@ -63,7 +63,7 @@ const ProjectPage = memo(() => {
             </div>
 
             <div className='project-details__buttons'>
-              <BtnGitHubPages link={project.gitHubPagesLink} />
+              <BtnDeployment link={project.gitHubPagesLink} />
               <BtnGitHubRepo link={project.gitHubRepoLink} />
             </div>
           </div>

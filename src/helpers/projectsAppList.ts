@@ -45,8 +45,8 @@ const projectsApps: TProject[] = [
   {
     title: 'Mesto Russia',
     imgMic: mestoMic,
-    imgSmall: mesto,
-    imgBig: mestoMin,
+    imgSmall: mestoMin,
+    imgBig: mesto,
     skills: 'Vanila JS',
     gitHubRepoLink: 'https://github.com/SaparovPetr/mesto-project-ff',
     gitHubPagesLink: 'https://saparovpetr.github.io/mesto-project-ff/'
