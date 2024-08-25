@@ -9,22 +9,19 @@
 	--white: #fff;
 	--light-gray: #eae5e5;
 	--purple: #5c62ec;
+	--yellow: #e5c41d;
 	--medium-gray: #7d7c79;
 
-	/* Nav */
-	/* --nav-bg: var(--black); */
-	/* --nav-border: var(--black-border);
-	--nav-text: var(--white); */
-
-	/* Footer */
-	/* --footer-bg: var(--black);
-	--footer-text: var(--white); */
-
 	/* Light mode */
+	--nav-bg: var(--medium-gray);
+	--nav-text: var(--white);
+
 	--header-bg: var(--white);
 	--header-text: var(--black);
 	--header-img: url('./../../../img/header-bg-gg.png');
-	--page-bg: var(--white);
+	--page-bg: #f7f4e3;
+
+	
 	--text-color: var(--black);
 	--accent: var(--purple);
 	--title-1: var(--accent);

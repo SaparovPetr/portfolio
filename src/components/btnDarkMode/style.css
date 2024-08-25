@@ -13,7 +13,7 @@
 	padding: 5px;
 
 	border-radius: 50px;
-	background-color: #272727;
+	background-color: var(--white);
 }
 
 .dark-mode-btn::before {
@@ -28,7 +28,7 @@
 	height: 24px;
 
 	border-radius: 50%;
-	background-color: #fff;
+	background-color: var(--accent);
 
 	transition: left 0.2s ease-in;
 }

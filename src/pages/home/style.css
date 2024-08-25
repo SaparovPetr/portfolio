@@ -8,7 +8,7 @@
 	justify-content: center;
 	align-items: center;
 
-	background-color: var(--header-bg);
+	background-color: var(--page-bg);
 	background-image: var(--header-img);
 	background-repeat: no-repeat;
 	background-size: auto;
