@@ -2,10 +2,8 @@ import './style.css';
 
 import vk from './../../img/icons/vk.svg';
 import hh from './../../img/icons/hh.svg';
-import twitter from './../../img/icons/twitter.svg';
 import linkedIn from './../../img/icons/linkedIn.svg';
 import gitHub from './../../img/icons/gitHub.svg';
-import React from 'react';
 
 const Footer = () => (
   <footer className='footer'>

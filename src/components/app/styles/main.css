@@ -9,15 +9,16 @@
 	--white: #fff;
 	--light-gray: #eae5e5;
 	--purple: #5c62ec;
+	--medium-gray: #7d7c79;
 
 	/* Nav */
-	--nav-bg: var(--black);
-	--nav-border: var(--black-border);
-	--nav-text: var(--white);
+	/* --nav-bg: var(--black); */
+	/* --nav-border: var(--black-border);
+	--nav-text: var(--white); */
 
 	/* Footer */
-	--footer-bg: var(--black);
-	--footer-text: var(--white);
+	/* --footer-bg: var(--black);
+	--footer-text: var(--white); */
 
 	/* Light mode */
 	--header-bg: var(--white);
@@ -31,10 +32,21 @@
 	--project-card-bg: var(--white);
 	--project-card-text: var(--black);
 	--box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+
+	--footer-bg: var(--medium-gray);
+	--footer-text: var(--white);
+
 }
 
 .dark {
 	/* Dark mode */
+	--nav-bg: var(--black);
+	--nav-border: var(--black-border);
+	--nav-text: var(--white);
+
+	--footer-bg: var(--black);
+	--footer-text: var(--white);
+
 	--header-bg: var(--black);
 	--header-text: var(--white);	
 	--header-img: url('./../../../img/header-bg.png');
@@ -160,7 +172,7 @@ body {
 /* Projects  */
 
 .projects {
-	padding: 60px 0;
+	padding: 34px 0 60px;
 	display: flex;	
 	justify-content: center;
 	flex-wrap: wrap;

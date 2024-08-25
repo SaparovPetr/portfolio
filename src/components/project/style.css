@@ -19,7 +19,7 @@
 	color: var(--project-card-text);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
 	.project {
 		max-width: 288px;
 		max-height: 288px;
@@ -27,7 +27,7 @@
 
 	
 	.project__img {
-		max-width: 290px;
-		max-height: 217px;
+		min-width: 290px;
+		min-height: 217px;
 	}
 }

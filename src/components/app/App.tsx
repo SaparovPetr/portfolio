@@ -9,25 +9,19 @@ import ProjectPage from '../../pages/project/Project-page';
 import Contacts from '../../pages/contacts/Contacts';
 import ScrollToTop from '../../utils/scrollToTop';
 
-// eslint-disable-next-line arrow-body-style
-const App = () => {
-  return (
-    <>
-      <div className='App'>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/apps' element={<ProjectApps />} />
-          <Route path='/apps/:id' element={<ProjectPage />} />
-          <Route path='/layouts' element={<ProjectLayouts />} />
-          <Route path='/layouts/:id' element={<ProjectPage />} />
-          <Route path='/contacts' element={<Contacts />} />
-        </Routes>
-        <Footer />
-      </div>
-    </>
-  );
-};
-
+const App = () => (
+  <div className='App'>
+    <ScrollToTop />
+    <Navbar />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/apps' element={<ProjectApps />} />
+      <Route path='/apps/:id' element={<ProjectPage />} />
+      <Route path='/layouts' element={<ProjectLayouts />} />
+      <Route path='/layouts/:id' element={<ProjectPage />} />
+      <Route path='/contacts' element={<Contacts />} />
+    </Routes>
+    <Footer />
+  </div>
+);
 export default App;
