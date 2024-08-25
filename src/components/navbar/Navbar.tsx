@@ -1,10 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import BtnDarkMode from '../btnDarkMode/BtnDarkMode';
 import './style.css';
+import BtnSwitchLanguage from '../btnSwitchLanguage/btnSwitchLanguage';
+import { useAppSelector } from '../../services/store';
+import { selectModeState } from '../../services/slices/language-slice';
+import { LanguageMode } from '@utils-types';
 
 const Navbar = () => {
   const activeLink = 'nav-list__link nav-list__link--active';
   const normalLink = 'nav-list__link';
+
+  const currientMode = useAppSelector(selectModeState);
 
   return (
     <nav className='nav'>
@@ -15,6 +21,7 @@ const Navbar = () => {
           </NavLink>
 
           <div className='nav-aria-wrapper'>
+            <BtnSwitchLanguage />
             <BtnDarkMode />
 
             <ul className='nav-list'>
@@ -25,7 +32,7 @@ const Navbar = () => {
                     isActive ? activeLink : normalLink
                   }
                 >
-                  Home
+                  {currientMode === LanguageMode.English ? 'Home' : 'Главная'}
                 </NavLink>
               </li>
 
@@ -36,7 +43,9 @@ const Navbar = () => {
                     isActive ? activeLink : normalLink
                   }
                 >
-                  My applications
+                  {currientMode === LanguageMode.English
+                    ? 'My applications'
+                    : 'Мои приложения'}
                 </NavLink>
               </li>
 
@@ -47,7 +56,9 @@ const Navbar = () => {
                     isActive ? activeLink : normalLink
                   }
                 >
-                  My layouts
+                  {currientMode === LanguageMode.English
+                    ? 'My layouts'
+                    : 'Моя верстка'}
                 </NavLink>
               </li>
 
@@ -58,7 +69,9 @@ const Navbar = () => {
                     isActive ? activeLink : normalLink
                   }
                 >
-                  Contacts
+                  {currientMode === LanguageMode.English
+                    ? 'Contacts'
+                    : 'Контакты'}
                 </NavLink>
               </li>
             </ul>

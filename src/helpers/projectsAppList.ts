@@ -16,40 +16,56 @@ import { TProject } from '@utils-types';
 
 const projectsApps: TProject[] = [
   {
-    title: 'GitTreiner',
-    skills: 'React, Redux',
     imgMic: gitTreinerImgMic,
     imgSmall: gitTreinerImgMin,
     imgBig: gitTreinerImg,
+    title: 'GitTreiner',
+    ruTitle: 'GitTreiner',
+    skills: 'React, Redux',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com/SaparovPetr/gitTreiner',
-    gitHubPagesLink: 'https://saparovpetr.github.io/gitTreiner/'
+    deploymentLink: 'https://saparovpetr.github.io/gitTreiner/'
   },
   {
-    title: 'Stellar Burger',
     imgMic: stellarburgerMic,
     imgSmall: stellarburgerMin,
     imgBig: stellarburger,
+    title: 'Stellar Burger',
+    ruTitle: 'Космическая бургерная',
     skills: 'React, Redux',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com/SaparovPetr/stellar-burger',
-    gitHubPagesLink: 'https://saparovpetr.github.io/stellar-burger/'
+    deploymentLink: 'https://saparovpetr.github.io/stellar-burger/'
   },
   {
-    title: 'Web-larek',
     imgMic: larekMic,
     imgSmall: larekMin,
     imgBig: larek,
+    title: 'Web-stall',
+    ruTitle: 'Web-ларёк',
     skills: 'TS',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com/SaparovPetr/web-larek-frontend',
-    gitHubPagesLink: 'https://saparovpetr.github.io/web-larek-frontend/'
+    deploymentLink: 'https://saparovpetr.github.io/web-larek-frontend/'
   },
   {
-    title: 'Mesto Russia',
     imgMic: mestoMic,
     imgSmall: mestoMin,
     imgBig: mesto,
+    title: 'Mesto',
+    ruTitle: 'Место',
     skills: 'Vanila JS',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com/SaparovPetr/mesto-project-ff',
-    gitHubPagesLink: 'https://saparovpetr.github.io/mesto-project-ff/'
+    deploymentLink: 'https://saparovpetr.github.io/mesto-project-ff/'
   }
 ];
 

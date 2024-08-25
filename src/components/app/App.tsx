@@ -8,20 +8,42 @@ import ProjectLayouts from '../../pages/projects-layouts/Projects-Layouts';
 import ProjectPage from '../../pages/project/Project-page';
 import Contacts from '../../pages/contacts/Contacts';
 import ScrollToTop from '../../utils/scrollToTop';
+import { useEffect } from 'react';
+import { useAppDispatch } from '../../services/store';
+import { LanguageMode } from '@utils-types';
+import { setLanguage } from '../../services/slices/language-slice';
 
-const App = () => (
-  <div className='App'>
-    <ScrollToTop />
-    <Navbar />
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/apps' element={<ProjectApps />} />
-      <Route path='/apps/:id' element={<ProjectPage />} />
-      <Route path='/layouts' element={<ProjectLayouts />} />
-      <Route path='/layouts/:id' element={<ProjectPage />} />
-      <Route path='/contacts' element={<Contacts />} />
-    </Routes>
-    <Footer />
-  </div>
-);
+const App = () => {
+  const dispatch = useAppDispatch();
+
+  const currientLanguageFromLocalStorage =
+    localStorage.getItem(`currientLanguage`);
+
+  useEffect(() => {
+    if (!currientLanguageFromLocalStorage) {
+      dispatch(setLanguage(LanguageMode.Russian));
+    }
+
+    if (currientLanguageFromLocalStorage) {
+      dispatch(setLanguage(currientLanguageFromLocalStorage));
+    }
+  }, [dispatch]);
+
+  return (
+    <div className='App'>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/apps' element={<ProjectApps />} />
+        <Route path='/apps/:id' element={<ProjectPage />} />
+        <Route path='/layouts' element={<ProjectLayouts />} />
+        <Route path='/layouts/:id' element={<ProjectPage />} />
+        <Route path='/contacts' element={<Contacts />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+};
+
 export default App;

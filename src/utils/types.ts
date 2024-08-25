@@ -10,10 +10,19 @@ export type TBtnGitHubProps = {
 
 export type TProject = {
   title: string;
+  ruTitle: string;
   skills: string;
+  ruSkils: string;
+  description: string;
+  ruDescription: string;
   imgMic: string;
   imgSmall: string;
   imgBig: string;
   gitHubRepoLink: string;
-  gitHubPagesLink: string;
+  deploymentLink: string;
 };
+
+export const enum LanguageMode {
+  English = 'en',
+  Russian = 'ru'
+}

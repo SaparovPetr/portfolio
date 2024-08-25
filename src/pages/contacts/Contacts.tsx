@@ -1,16 +1,28 @@
-/* eslint-disable arrow-body-style */
 import React from 'react';
+import { useAppSelector } from '../../services/store';
+import { selectModeState } from '../../services/slices/language-slice';
+import { LanguageMode } from '@utils-types';
 
 const Contacts = () => {
+  const currientMode = useAppSelector(selectModeState);
+
   return (
     <main className='section'>
       <div className='container'>
-        <h1 className='title-1'>Contacts</h1>
+        <h1 className='title-1'>
+          {currientMode === LanguageMode.English ? 'Contacts' : 'Контакты:'}
+        </h1>
 
         <ul className='content-list'>
           <li className='content-list__item'>
-            <h2 className='title-2'>Location</h2>
-            <p>Moscow, Russia</p>
+            <h2 className='title-2'>
+              {currientMode === LanguageMode.English ? 'Location' : 'Локация'}
+            </h2>
+            <p>
+              {currientMode === LanguageMode.English
+                ? 'Moscow, Russia'
+                : 'Москва, Россия'}
+            </p>
           </li>
           <li className='content-list__item'>
             <h2 className='title-2'>Telegram / WhatsApp</h2>

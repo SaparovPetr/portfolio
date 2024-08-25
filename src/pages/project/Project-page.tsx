@@ -8,9 +8,14 @@ import BtnDeployment from '../../components/btnDeployment/BtnDeployment';
 import { MyImage } from '../../components/myImage/MyImage';
 import { memo } from 'react';
 
+import { useAppSelector } from '../../services/store';
+import { selectModeState } from '../../services/slices/language-slice';
+import { LanguageMode } from '@utils-types';
+
 const ProjectPage = memo(() => {
   const { id } = useParams<{ id: string }>();
   const { pathname } = useLocation();
+  const currientMode = useAppSelector(selectModeState);
 
   if (pathname.includes('apps')) {
     const project = projectsApps[Number(id)];
@@ -18,7 +23,11 @@ const ProjectPage = memo(() => {
       <main className='section'>
         <div className='container'>
           <div className='project-details'>
-            <h1 className='title-1'>{project.title}</h1>
+            <h1 className='title-1'>
+              {currientMode === LanguageMode.English
+                ? project.title
+                : project.ruTitle}
+            </h1>
 
             <MyImage
               src={project.imgBig}
@@ -29,11 +38,11 @@ const ProjectPage = memo(() => {
             />
 
             <div className='project-details__desc'>
-              <p>Skills: {project.skills}</p>
+              <p>{project.skills}</p>
             </div>
 
             <div className='project-details__buttons'>
-              <BtnDeployment link={project.gitHubPagesLink} />
+              <BtnDeployment link={project.deploymentLink} />
               <BtnGitHubRepo link={project.gitHubRepoLink} />
             </div>
           </div>
@@ -48,7 +57,12 @@ const ProjectPage = memo(() => {
       <main className='section'>
         <div className='container'>
           <div className='project-details'>
-            <h1 className='title-1'>{project.title}</h1>
+            <h1 className='title-1'>
+              {' '}
+              {currientMode === LanguageMode.English
+                ? project.title
+                : project.ruTitle}
+            </h1>
 
             <MyImage
               src={project.imgBig}
@@ -59,11 +73,11 @@ const ProjectPage = memo(() => {
             />
 
             <div className='project-details__desc'>
-              <p>Skills: {project.skills}</p>
+              <p>{project.skills}</p>
             </div>
 
             <div className='project-details__buttons'>
-              <BtnDeployment link={project.gitHubPagesLink} />
+              <BtnDeployment link={project.deploymentLink} />
               <BtnGitHubRepo link={project.gitHubRepoLink} />
             </div>
           </div>

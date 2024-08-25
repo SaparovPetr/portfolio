@@ -19,49 +19,69 @@ import { TProject } from '@utils-types';
 
 const projectsLayouts: TProject[] = [
   {
-    title: 'Listening time podcast',
-    skills: 'HTML, CSS',
     imgMic: ltMic,
     imgSmall: ltMin,
     imgBig: lt,
+    title: 'Transcription storage',
+    ruTitle: 'Хранилище транскрипций',
+    skills: 'HTML, CSS',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com',
-    gitHubPagesLink: 'http://podcast.saparovpetr.ru'
+    deploymentLink: 'http://podcast.saparovpetr.ru'
   },
   {
-    title: 'No focus',
     imgMic: nfMic,
     imgSmall: nfMin,
     imgBig: nf,
+    title: 'No focus',
+    ruTitle: 'Сложно сосредоточиться',
     skills: 'HTML, CSS',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com',
-    gitHubPagesLink: 'https://slozhno.saparovpetr.ru/'
+    deploymentLink: 'https://slozhno.saparovpetr.ru/'
   },
   {
-    title: 'Pulsometr store',
     imgMic: pMic,
     imgSmall: pMin,
     imgBig: p,
+    title: 'Pulsometr shop',
+    ruTitle: 'Магазин пульсометров',
     skills: 'HTML, CSS, JS',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com',
-    gitHubPagesLink: 'https://saparovpetr.github.io/pulse/'
+    deploymentLink: 'https://saparovpetr.github.io/pulse/'
   },
   {
-    title: 'Look at the window',
     imgMic: pvMic,
     imgSmall: pvMin,
     imgBig: pv,
+    title: 'Look at the window',
+    ruTitle: 'Посмотри в окно',
     skills: 'HTML, CSS',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com',
-    gitHubPagesLink: 'https://look.saparovpetr.ru/'
+    deploymentLink: 'https://look.saparovpetr.ru/'
   },
   {
-    title: 'Closing tag',
     imgMic: ztMic,
     imgSmall: ztMin,
     imgBig: zt,
+    title: 'Closing tag',
+    ruTitle: 'Закрывающий тег',
     skills: 'HTML, SCSS',
+    ruSkils: '',
+    description: '',
+    ruDescription: '',
     gitHubRepoLink: 'https://github.com',
-    gitHubPagesLink: 'http://closing.saparovpetr.ru/'
+    deploymentLink: 'http://closing.saparovpetr.ru/'
   }
 ];
 
