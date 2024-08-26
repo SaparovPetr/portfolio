@@ -24,6 +24,8 @@ const BtnDarkMode = () => {
         const newColorScheme = event.matches ? 'dark' : 'light';
         if (typeof setDarkMode === 'function') {
           setDarkMode(newColorScheme);
+        } else {
+          console.error('setDarkMode is not a function');
         }
       });
   }, [setDarkMode]);

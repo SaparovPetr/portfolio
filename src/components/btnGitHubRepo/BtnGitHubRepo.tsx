@@ -5,7 +5,7 @@ import './style.css';
 const BtnGitHubRepo = ({ link }: TBtnGitHubProps) => (
   <a href={link} target='_blank' rel='noreferrer' className='btn-outline'>
     <img src={gitHubIcon} alt='' />
-    GH Repo
+    <p>GH Repo</p>
   </a>
 );
 

@@ -5,7 +5,7 @@ import { TBtnGitHubProps } from '@utils-types';
 const BtnDeployment = ({ link }: TBtnGitHubProps) => (
   <a href={link} target='_blank' rel='noreferrer' className='btn-outline'>
     <img src={netlifyIcon} alt='' />
-    Deployment
+    <p>Deployment</p>
   </a>
 );
 

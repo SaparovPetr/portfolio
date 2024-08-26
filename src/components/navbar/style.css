@@ -43,7 +43,7 @@
 
 .nav-list__link {
 	color: var(--nav-text);
-	font-family: 'Suisse';
+	font-family: 'Suisse', Arial, Helvetica, sans-serif;
 	font-weight: bold;
 }
 
