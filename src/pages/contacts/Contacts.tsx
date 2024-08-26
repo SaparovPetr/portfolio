@@ -33,7 +33,7 @@ const Contacts = () => {
           <li className='content-list__item'>
             <h2 className='title-2'>Email</h2>
             <p>
-              <a href='mailto:webdev@protonmail.com'>saparov.petr@gmail.com</a>
+              <a href='mailto:saparov.petr@gmail.com'>saparov.petr@gmail.com</a>
             </p>
           </li>
         </ul>
