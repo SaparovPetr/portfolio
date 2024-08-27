@@ -12,6 +12,7 @@ import { useEffect } from 'react';
 import { useAppDispatch } from '../../services/store';
 import { LanguageMode } from '@utils-types';
 import { setLanguage } from '../../services/slices/language-slice';
+import { NotFound404 } from '../not-fount-404/not-fount-404';
 
 const App = () => {
   const dispatch = useAppDispatch();
@@ -40,6 +41,7 @@ const App = () => {
         <Route path='/layouts' element={<ProjectLayouts />} />
         <Route path='/layouts/:id' element={<ProjectPage />} />
         <Route path='/contacts' element={<Contacts />} />
+        <Route path='*' element={<NotFound404 />} />
       </Routes>
       <Footer />
     </div>

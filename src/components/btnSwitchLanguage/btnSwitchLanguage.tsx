@@ -34,8 +34,12 @@ const BtnSwitchLanguage = () => {
       className={currientMode === LanguageMode.English ? btnActive : btnNormal}
       onClick={toggleLanguage}
     >
-      <img src={ru} alt='Light mode' className='en-mode-btn__icon' />
-      <img src={en} alt='Dark mode' className='en-mode-btn__icon' />
+      <img src={ru} alt='иконка русского языка' className='en-mode-btn__icon' />
+      <img
+        src={en}
+        alt='иконка английского языка'
+        className='en-mode-btn__icon'
+      />
     </button>
   );
 };

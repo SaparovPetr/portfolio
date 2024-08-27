@@ -12,22 +12,30 @@ const Footer = () => (
         <ul className='social'>
           <li className='social__item'>
             <a href='#!'>
-              <img className='social__icon' src={vk} alt='Link' />
+              <img className='social__icon' src={vk} alt='иконка вконтакте' />
             </a>
           </li>
           <li className='social__item'>
             <a href='#!'>
-              <img className='social__icon' src={hh} alt='Link' />
+              <img className='social__icon' src={hh} alt='иконка хэдхантера' />
             </a>
           </li>
           <li className='social__item'>
             <a href='#!'>
-              <img className='social__icon' src={gitHub} alt='Link' />
+              <img
+                className='social__icon'
+                src={gitHub}
+                alt='иконка гитхабаа'
+              />
             </a>
           </li>
           <li className='social__item'>
             <a href='#!'>
-              <img className='social__icon' src={linkedIn} alt='Link' />
+              <img
+                className='social__icon'
+                src={linkedIn}
+                alt='иконка линк ин'
+              />
             </a>
           </li>
         </ul>

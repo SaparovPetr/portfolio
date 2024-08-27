@@ -28,11 +28,11 @@
 	margin-top: 0.5em;
 }
 
-.social__icon {
-
+.social__icon:hover {
+	opacity: 0.8;
 }
 
-
-.social__icon:hover {
-
+.social__icon:active {
+	position: relative;
+	top: 1px;
 }
