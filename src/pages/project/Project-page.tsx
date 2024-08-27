@@ -3,14 +3,16 @@ import { useLocation, useParams } from 'react-router-dom';
 import { projectsApps } from '../../helpers/projectsAppList';
 import { projectsLayouts } from '../../helpers/projectsLayoutList';
 
-import BtnGitHubRepo from '../../components/btnGitHubRepo/BtnGitHubRepo';
-import BtnDeployment from '../../components/btnDeployment/BtnDeployment';
 import { MyImage } from '../../components/myImage/MyImage';
 import { memo } from 'react';
 
 import { useAppSelector } from '../../services/store';
 import { selectModeState } from '../../services/slices/language-slice';
 import { LanguageMode } from '@utils-types';
+import BtnGoTo from '../../components/btnGoTo/btnGoTo';
+
+import gitHubIcon from '../../img/icons/gitHub-black.svg';
+import netlifyIcon from '../../img/icons/netlifyIcon.svg';
 
 const ProjectPage = memo(() => {
   const { id } = useParams<{ id: string }>();
@@ -38,12 +40,33 @@ const ProjectPage = memo(() => {
             />
 
             <div className='project-details__desc'>
-              <p>{project.skills}</p>
+              <p className='project-details__skills'>
+                {currientMode === LanguageMode.English
+                  ? project.skills
+                  : project.ruSkils}
+              </p>
+              <p className='project-details__text'>
+                {currientMode === LanguageMode.English
+                  ? project.description
+                  : project.ruDescription}
+              </p>
             </div>
 
             <div className='project-details__buttons'>
-              <BtnDeployment link={project.deploymentLink} />
-              <BtnGitHubRepo link={project.gitHubRepoLink} />
+              <BtnGoTo
+                linkToResourse={project.deploymentLink}
+                icon={netlifyIcon}
+                alt={'кнопка перехода к деплою'}
+              >
+                Deployment
+              </BtnGoTo>
+              <BtnGoTo
+                linkToResourse={project.deploymentLink}
+                icon={gitHubIcon}
+                alt={'кнопка перехода к репозиторию'}
+              >
+                GH Repo
+              </BtnGoTo>
             </div>
           </div>
         </div>
@@ -73,12 +96,29 @@ const ProjectPage = memo(() => {
             />
 
             <div className='project-details__desc'>
-              <p>{project.skills}</p>
+              <p className='project-details__skills'>{project.skills}</p>
+              <p className='project-details__text'>
+                {currientMode === LanguageMode.English
+                  ? project.description
+                  : project.ruDescription}
+              </p>
             </div>
 
             <div className='project-details__buttons'>
-              <BtnDeployment link={project.deploymentLink} />
-              <BtnGitHubRepo link={project.gitHubRepoLink} />
+              <BtnGoTo
+                linkToResourse={project.deploymentLink}
+                icon={netlifyIcon}
+                alt={'кнопка перехода к деплою'}
+              >
+                Deployment
+              </BtnGoTo>
+              <BtnGoTo
+                linkToResourse={project.deploymentLink}
+                icon={gitHubIcon}
+                alt={'кнопка перехода к репозиторию'}
+              >
+                GH Repo
+              </BtnGoTo>
             </div>
           </div>
         </div>

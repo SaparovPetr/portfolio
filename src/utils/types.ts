@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export type TProjectProps = {
   title: string;
   imgS: string;
@@ -7,6 +9,13 @@ export type TProjectProps = {
 export type TBtnGitHubProps = {
   link: string;
 };
+
+export interface BtnGoToProps {
+  linkToResourse: string;
+  icon: string;
+  alt: string;
+  children?: ReactNode;
+}
 
 export type TProject = {
   title: string;
