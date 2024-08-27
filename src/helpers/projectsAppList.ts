@@ -21,8 +21,8 @@ const projectsApps: TProject[] = [
     imgBig: gitTreinerImg,
     title: 'GitTreiner',
     ruTitle: 'GitTreiner',
-    skills: 'Stack: React, Redux',
-    ruSkils: 'Стэк: React, Redux',
+    skills: 'Stack: React, Redux, React Router',
+    ruSkils: 'Стэк: React, Redux, React Router',
     description: '',
     ruDescription:
       'Мой небоольшой пэт-проект. Устанавливаемое на мобильные устройства PWA-приложение для изучения английских слов и выражений через распространенные словосочетания с ними. Реализовано в виде теста. Позволяет редактировать карточки английских слов (маркдаун-файлы), которые хранятся на Гитхабе и доступны локально. Нахожу для себя этот метод самым эффективным.',
@@ -35,10 +35,11 @@ const projectsApps: TProject[] = [
     imgBig: stellarburger,
     title: 'Stellar Burger',
     ruTitle: 'Космическая бургерная',
-    skills: 'Stack: React, Redux',
-    ruSkils: '',
+    skills: 'Stack: React, Redux, React Router',
+    ruSkils: 'Стэк: React, Redux, React Router',
     description: '',
-    ruDescription: '',
+    ruDescription:
+      'Учебный проект. Интернет-магазин бургеров. Обеспечена авторизация и возможность сборки собственного бургера из предложенных ингредиентов.',
     gitHubRepoLink: 'https://github.com/SaparovPetr/stellar-burger',
     deploymentLink: 'https://saparovpetr.github.io/stellar-burger/'
   },
@@ -49,9 +50,9 @@ const projectsApps: TProject[] = [
     title: 'Web-stall',
     ruTitle: 'Web-ларёк',
     skills: 'Stack: TS',
-    ruSkils: '',
+    ruSkils: 'Стек: TS и ООП',
     description: '',
-    ruDescription: '',
+    ruDescription: 'Учебный проект. Интернет-магазин, написанный на классах.',
     gitHubRepoLink: 'https://github.com/SaparovPetr/web-larek-frontend',
     deploymentLink: 'https://saparovpetr.github.io/web-larek-frontend/'
   },
@@ -62,9 +63,10 @@ const projectsApps: TProject[] = [
     title: 'Mesto',
     ruTitle: 'Место',
     skills: 'Stack: Vanila JS',
-    ruSkils: '',
+    ruSkils: 'Стэк: Vanila JS',
     description: '',
-    ruDescription: '',
+    ruDescription:
+      'Учебный проект на чистом JS. Представляет из себя редактируемый фото-альбом посещенных пользователем мест.',
     gitHubRepoLink: 'https://github.com/SaparovPetr/mesto-project-ff',
     deploymentLink: 'https://saparovpetr.github.io/mesto-project-ff/'
   }

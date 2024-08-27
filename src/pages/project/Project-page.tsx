@@ -19,112 +19,61 @@ const ProjectPage = memo(() => {
   const { pathname } = useLocation();
   const currientMode = useAppSelector(selectModeState);
 
-  if (pathname.includes('apps')) {
-    const project = projectsApps[Number(id)];
-    return (
-      <main className='section'>
-        <div className='container'>
-          <div className='project-details'>
-            <h1 className='title-1'>
+  const project = pathname.includes('apps')
+    ? projectsApps[Number(id)]
+    : projectsLayouts[Number(id)];
+
+  return (
+    <main className='section'>
+      <div className='container'>
+        <div className='project-details'>
+          <h1 className='title-1'>
+            {currientMode === LanguageMode.English
+              ? project.title
+              : project.ruTitle}
+          </h1>
+
+          <MyImage
+            src={project.imgBig}
+            alt={'скриншот проекта'}
+            placeholderSrc={project.imgSmall}
+            height='649'
+            className='project-details__cover'
+          />
+
+          <div className='project-details__desc'>
+            <p className='project-details__skills'>
               {currientMode === LanguageMode.English
-                ? project.title
-                : project.ruTitle}
-            </h1>
+                ? project.skills
+                : project.ruSkils}
+            </p>
+            <p className='project-details__text'>
+              {currientMode === LanguageMode.English
+                ? project.description
+                : project.ruDescription}
+            </p>
+          </div>
 
-            <MyImage
-              src={project.imgBig}
-              alt={'скриншот проекта'}
-              placeholderSrc={project.imgSmall}
-              height='649'
-              className='project-details__cover'
-            />
-
-            <div className='project-details__desc'>
-              <p className='project-details__skills'>
-                {currientMode === LanguageMode.English
-                  ? project.skills
-                  : project.ruSkils}
-              </p>
-              <p className='project-details__text'>
-                {currientMode === LanguageMode.English
-                  ? project.description
-                  : project.ruDescription}
-              </p>
-            </div>
-
-            <div className='project-details__buttons'>
-              <BtnGoTo
-                linkToResourse={project.deploymentLink}
-                icon={netlifyIcon}
-                alt={'кнопка перехода к деплою'}
-              >
-                Deployment
-              </BtnGoTo>
-              <BtnGoTo
-                linkToResourse={project.deploymentLink}
-                icon={gitHubIcon}
-                alt={'кнопка перехода к репозиторию'}
-              >
-                GH Repo
-              </BtnGoTo>
-            </div>
+          <div className='project-details__buttons'>
+            <BtnGoTo
+              linkToResourse={project.deploymentLink}
+              icon={netlifyIcon}
+              alt={'кнопка перехода к деплою'}
+            >
+              Deployment
+            </BtnGoTo>
+            <BtnGoTo
+              linkToResourse={project.deploymentLink}
+              icon={gitHubIcon}
+              alt={'кнопка перехода к репозиторию'}
+            >
+              GH Repo
+            </BtnGoTo>
           </div>
         </div>
-      </main>
-    );
-  }
-
-  if (pathname.includes('layouts')) {
-    const project = projectsLayouts[Number(id)];
-    return (
-      <main className='section'>
-        <div className='container'>
-          <div className='project-details'>
-            <h1 className='title-1'>
-              {' '}
-              {currientMode === LanguageMode.English
-                ? project.title
-                : project.ruTitle}
-            </h1>
-
-            <MyImage
-              src={project.imgBig}
-              alt={'скриншот проекта'}
-              placeholderSrc={project.imgSmall}
-              height='649'
-              className='project-details__cover'
-            />
-
-            <div className='project-details__desc'>
-              <p className='project-details__skills'>{project.skills}</p>
-              <p className='project-details__text'>
-                {currientMode === LanguageMode.English
-                  ? project.description
-                  : project.ruDescription}
-              </p>
-            </div>
-
-            <div className='project-details__buttons'>
-              <BtnGoTo
-                linkToResourse={project.deploymentLink}
-                icon={netlifyIcon}
-                alt={'кнопка перехода к деплою'}
-              >
-                Deployment
-              </BtnGoTo>
-              <BtnGoTo
-                linkToResourse={project.deploymentLink}
-                icon={gitHubIcon}
-                alt={'кнопка перехода к репозиторию'}
-              >
-                GH Repo
-              </BtnGoTo>
-            </div>
-          </div>
-        </div>
-      </main>
-    );
-  }
+      </div>
+    </main>
+  );
 });
 
 export default ProjectPage;
