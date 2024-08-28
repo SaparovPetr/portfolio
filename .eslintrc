@@ -31,12 +31,7 @@
             "pattern": "react",
             "group": "external",
             "position": "before"
-          }, 
-          {
-            "pattern": "css",
-            "group": "internal",
-            "position": "before"
-          }
+          }          
         ],
         "pathGroupsExcludedImportTypes": [
           "react"
