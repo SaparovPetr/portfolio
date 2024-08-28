@@ -41,3 +41,15 @@
 	position: relative;
 	z-index: 9;
 }
+
+/* .darkModeBtnIcon {
+	position: relative;
+	z-index: 9;
+} */
+
+@media (max-width: 620px) {
+	
+	/* .dark-mode-btn {
+		order: 0;
+	} */
+}

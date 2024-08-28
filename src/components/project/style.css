@@ -33,4 +33,9 @@
 		min-width: 290px;
 		min-height: 217px;
 	}
+
+	
+	.project__title {
+		font-size: 22px;
+	}
 }

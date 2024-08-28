@@ -1,5 +1,7 @@
 import { BtnGoToProps } from '@utils-types';
 
+import styles from './style.module.css';
+
 const BtnGoTo: React.FC<BtnGoToProps> = ({
   linkToResourse,
   icon,
@@ -10,7 +12,7 @@ const BtnGoTo: React.FC<BtnGoToProps> = ({
     href={linkToResourse}
     target='_blank'
     rel='noreferrer'
-    className='btn-outline'
+    className={styles.btn_outline}
   >
     <img src={icon} alt={alt} />
     <p>{children}</p>

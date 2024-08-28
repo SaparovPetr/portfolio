@@ -34,7 +34,7 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div className='App'>
+    <>
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -47,7 +47,7 @@ const App = () => {
         <Route path='*' element={<NotFound404 />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 };
 
