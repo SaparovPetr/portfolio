@@ -1,5 +1,6 @@
-import { FC } from 'react';
 import './style.css';
+
+import { FC } from 'react';
 
 export const NotFound404: FC = () => (
   <div className={'page-not-found'}>

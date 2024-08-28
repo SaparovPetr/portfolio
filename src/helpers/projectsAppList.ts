@@ -1,18 +1,17 @@
+import { TProject } from '@utils-types';
+
 import gitTreinerImg from './../img/projects/img-apps/gt.png';
+import mesto from './../img/projects/img-apps/mr.png';
 import stellarburger from './../img/projects/img-apps/sb.png';
 import larek from './../img/projects/img-apps/wl.png';
-import mesto from './../img/projects/img-apps/mr.png';
-
-import gitTreinerImgMin from './../img/projects/img-apps-min/gt.jpg';
-import stellarburgerMin from './../img/projects/img-apps-min/sb.jpg';
-import larekMin from './../img/projects/img-apps-min/wl.jpg';
-import mestoMin from './../img/projects/img-apps-min/mr.jpg';
-
 import gitTreinerImgMic from './../img/projects/img-apps-mic/gt.jpg';
+import mestoMic from './../img/projects/img-apps-mic/mr.jpg';
 import stellarburgerMic from './../img/projects/img-apps-mic/sb.jpg';
 import larekMic from './../img/projects/img-apps-mic/wl.jpg';
-import mestoMic from './../img/projects/img-apps-mic/mr.jpg';
-import { TProject } from '@utils-types';
+import gitTreinerImgMin from './../img/projects/img-apps-min/gt.jpg';
+import mestoMin from './../img/projects/img-apps-min/mr.jpg';
+import stellarburgerMin from './../img/projects/img-apps-min/sb.jpg';
+import larekMin from './../img/projects/img-apps-min/wl.jpg';
 
 const projectsApps: TProject[] = [
   {

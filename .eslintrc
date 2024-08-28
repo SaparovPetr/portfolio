@@ -1,7 +1,14 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react", "@typescript-eslint", "prettier"],
-  "extends": ["prettier"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "import"
+  ],
+  "extends": [
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -10,6 +17,37 @@
     }
   },
   "rules": {
+    // СПС -  настройка поорядка импортов в файлах с помощью eslint-plugin-import.
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }, 
+          {
+            "pattern": "css",
+            "group": "internal",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
     "prettier/prettier": [
       "warn",
       {
@@ -18,7 +56,12 @@
     ],
     "react/react-in-jsx-scope": "off",
     "comma-dangle": "off",
-    "use-isnan": ["error", { "enforceForSwitchCase": true }],
+    "use-isnan": [
+      "error",
+      {
+        "enforceForSwitchCase": true
+      }
+    ],
     "react/void-dom-elements-no-children": "warn",
     "react/no-unsafe": "warn",
     "react/no-unused-state": "warn",
@@ -28,13 +71,32 @@
     "react/no-this-in-sfc": "warn",
     "react/no-string-refs": "warn",
     "react/no-redundant-should-component-update": "warn",
-    "react/jsx-boolean-value": ["warn", "never"],
+    "react/jsx-boolean-value": [
+      "warn",
+      "never"
+    ],
     "react/jsx-key": "warn",
-    "react/jsx-max-props-per-line": ["warn", { "maximum": 7 }],
-    "react/jsx-max-depth": ["warn", { "max": 8 }],
-    "arrow-body-style": ["warn", "as-needed"],
+    "react/jsx-max-props-per-line": [
+      "warn",
+      {
+        "maximum": 7
+      }
+    ],
+    "react/jsx-max-depth": [
+      "warn",
+      {
+        "max": 8
+      }
+    ],
+    "arrow-body-style": [
+      "warn",
+      "as-needed"
+    ],
     "dot-notation": "warn",
-    "jsx-quotes": ["warn", "prefer-single"],
+    "jsx-quotes": [
+      "warn",
+      "prefer-single"
+    ],
     "valid-typeof": "warn",
     "@typescript-eslint/member-ordering": [
       "warn",

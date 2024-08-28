@@ -1,7 +1,8 @@
 import './style.css';
-import { NavLink } from 'react-router-dom';
-import { MyImage } from '../myImage/MyImage';
+
 import { TProjectProps } from '@utils-types';
+
+import { MyImage } from '../myImage/MyImage';
 
 const ProjectLayout = ({ title, imgS, imgXS }: TProjectProps) => (
   <li className='project'>

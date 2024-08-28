@@ -1,17 +1,20 @@
 import './styles/main.css';
+
+import { useEffect } from 'react';
+
+import { LanguageMode } from '@utils-types';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from '../navbar/Navbar';
-import Footer from '../footer/Footer';
+
+import Contacts from '../../pages/contacts/Contacts';
 import Home from '../../pages/home/Home';
+import ProjectPage from '../../pages/project/Project-page';
 import ProjectApps from '../../pages/projects-apps/Projects-Apps';
 import ProjectLayouts from '../../pages/projects-layouts/Projects-Layouts';
-import ProjectPage from '../../pages/project/Project-page';
-import Contacts from '../../pages/contacts/Contacts';
-import ScrollToTop from '../../utils/scrollToTop';
-import { useEffect } from 'react';
-import { useAppDispatch } from '../../services/store';
-import { LanguageMode } from '@utils-types';
 import { setLanguage } from '../../services/slices/language-slice';
+import { useAppDispatch } from '../../services/store';
+import ScrollToTop from '../../utils/scrollToTop';
+import Footer from '../footer/Footer';
+import Navbar from '../navbar/Navbar';
 import { NotFound404 } from '../not-fount-404/not-fount-404';
 
 const App = () => {

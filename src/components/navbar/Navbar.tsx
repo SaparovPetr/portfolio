@@ -1,10 +1,12 @@
-import { NavLink } from 'react-router-dom';
-import BtnDarkMode from '../btnDarkMode/BtnDarkMode';
 import './style.css';
-import BtnSwitchLanguage from '../btnSwitchLanguage/btnSwitchLanguage';
-import { useAppSelector } from '../../services/store';
-import { selectModeState } from '../../services/slices/language-slice';
+
 import { LanguageMode } from '@utils-types';
+import { NavLink } from 'react-router-dom';
+
+import { selectModeState } from '../../services/slices/language-slice';
+import { useAppSelector } from '../../services/store';
+import BtnDarkMode from '../btnDarkMode/BtnDarkMode';
+import BtnSwitchLanguage from '../btnSwitchLanguage/btnSwitchLanguage';
 
 const Navbar = () => {
   const activeLink = 'nav-list__link nav-list__link--active';

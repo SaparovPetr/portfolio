@@ -1,9 +1,11 @@
 import { StrictMode } from 'react';
+
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+
 import App from './components/app/App';
 import reportWebVitals from './reportWebVitals.js';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import store from './services/store';
 // import store from './services/store';
 

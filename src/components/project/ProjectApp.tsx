@@ -1,6 +1,8 @@
 import './style.css';
-import { MyImage } from '../myImage/MyImage';
+
 import { TProjectProps } from '@utils-types';
+
+import { MyImage } from '../myImage/MyImage';
 
 const ProjectApp = ({ title, imgS, imgXS }: TProjectProps) => (
   <li className='project'>

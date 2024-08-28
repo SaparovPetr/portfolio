@@ -1,10 +1,10 @@
-import { projectsLayouts } from '../../helpers/projectsLayoutList';
-import ProjectLayout from '../../components/project/ProjectLayout';
+import { LanguageMode } from '@utils-types';
 import { Link } from 'react-router-dom';
 
-import { useAppSelector } from '../../services/store';
+import ProjectLayout from '../../components/project/ProjectLayout';
+import { projectsLayouts } from '../../helpers/projectsLayoutList';
 import { selectModeState } from '../../services/slices/language-slice';
-import { LanguageMode } from '@utils-types';
+import { useAppSelector } from '../../services/store';
 
 const ProjectLayouts = () => {
   const currientMode = useAppSelector(selectModeState);

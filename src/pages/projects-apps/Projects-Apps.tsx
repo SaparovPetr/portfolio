@@ -1,10 +1,10 @@
-import { projectsApps } from '../../helpers/projectsAppList';
-import ProjectApp from '../../components/project/ProjectApp';
+import { LanguageMode } from '@utils-types';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
-import { useAppSelector } from '../../services/store';
+import ProjectApp from '../../components/project/ProjectApp';
+import { projectsApps } from '../../helpers/projectsAppList';
 import { selectModeState } from '../../services/slices/language-slice';
-import { LanguageMode } from '@utils-types';
+import { useAppSelector } from '../../services/store';
 
 const ProjectApps = () => {
   const currientMode = useAppSelector(selectModeState);

@@ -1,8 +1,9 @@
 import './style.css';
 
-import { useAppSelector } from '../../services/store';
-import { selectModeState } from '../../services/slices/language-slice';
 import { LanguageMode } from '@utils-types';
+
+import { selectModeState } from '../../services/slices/language-slice';
+import { useAppSelector } from '../../services/store';
 
 const Home = () => {
   const currientMode = useAppSelector(selectModeState);

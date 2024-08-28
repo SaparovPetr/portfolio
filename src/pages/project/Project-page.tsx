@@ -1,18 +1,16 @@
-import { useLocation, useParams } from 'react-router-dom';
-
-import { projectsApps } from '../../helpers/projectsAppList';
-import { projectsLayouts } from '../../helpers/projectsLayoutList';
-
-import { MyImage } from '../../components/myImage/MyImage';
 import { memo } from 'react';
 
-import { useAppSelector } from '../../services/store';
-import { selectModeState } from '../../services/slices/language-slice';
 import { LanguageMode } from '@utils-types';
-import BtnGoTo from '../../components/btnGoTo/btnGoTo';
+import { useLocation, useParams } from 'react-router-dom';
 
+import BtnGoTo from '../../components/btnGoTo/btnGoTo';
+import { MyImage } from '../../components/myImage/MyImage';
+import { projectsApps } from '../../helpers/projectsAppList';
+import { projectsLayouts } from '../../helpers/projectsLayoutList';
 import gitHubIcon from '../../img/icons/gitHub-black.svg';
 import netlifyIcon from '../../img/icons/netlifyIcon.svg';
+import { selectModeState } from '../../services/slices/language-slice';
+import { useAppSelector } from '../../services/store';
 
 const ProjectPage = memo(() => {
   const { id } = useParams<{ id: string }>();

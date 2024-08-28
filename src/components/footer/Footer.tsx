@@ -1,9 +1,9 @@
 import './style.css';
 
-import vk from './../../img/icons/vk.svg';
+import gitHub from './../../img/icons/gitHub.svg';
 import hh from './../../img/icons/hh.svg';
 import linkedIn from './../../img/icons/linkedIn.svg';
-import gitHub from './../../img/icons/gitHub.svg';
+import vk from './../../img/icons/vk.svg';
 
 const Footer = () => (
   <footer className='footer'>

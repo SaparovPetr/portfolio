@@ -1,16 +1,14 @@
-import { useEffect } from 'react';
-import { useLocalStorage } from '../../utils/useLocalStorage';
-import detectDarkMode from '../../utils/detectDarkMode';
+import './style.css';
+
+import { LanguageMode } from '@utils-types';
 
 import en from './en.svg';
 import ru from './ru.svg';
-import './style.css';
-import { useAppDispatch, useAppSelector } from '../../services/store';
 import {
   selectModeState,
   setLanguage
 } from '../../services/slices/language-slice';
-import { LanguageMode } from '@utils-types';
+import { useAppDispatch, useAppSelector } from '../../services/store';
 
 const BtnSwitchLanguage = () => {
   const dispatch = useAppDispatch();
