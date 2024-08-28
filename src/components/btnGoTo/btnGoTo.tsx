@@ -1,8 +1,8 @@
-import { BtnGoToProps } from '@utils-types';
+import { TBtnGoToProps } from '@utils-types';
 
 import styles from './style.module.css';
 
-const BtnGoTo: React.FC<BtnGoToProps> = ({
+const BtnGoTo: React.FC<TBtnGoToProps> = ({
   linkToResourse,
   icon,
   alt,

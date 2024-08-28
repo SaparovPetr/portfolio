@@ -4,6 +4,7 @@ import styles from './style.module.css';
 import { selectModeState } from '../../services/slices/language-slice';
 import { useAppSelector } from '../../services/store';
 
+/**Главная */
 const Home = () => {
   const currientMode = useAppSelector(selectModeState);
 

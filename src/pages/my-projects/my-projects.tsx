@@ -1,13 +1,13 @@
-import { LanguageMode } from '@utils-types';
+import { LanguageMode, TMyProjectsProps } from '@utils-types';
 import { Link } from 'react-router-dom';
 
 import styles from './style.module.css';
 import ProjectApp from '../../components/project/ProjectApp';
-import { projectsApps } from '../../helpers/projectsAppList';
 import { selectModeState } from '../../services/slices/language-slice';
 import { useAppSelector } from '../../services/store';
 
-const ProjectApps = () => {
+/**Старница с карточками проектов */
+const MyProjects = ({ array }: TMyProjectsProps) => {
   const currientMode = useAppSelector(selectModeState);
 
   return (
@@ -16,16 +16,16 @@ const ProjectApps = () => {
         {currientMode === LanguageMode.English ? 'Applications' : 'Приложения'}
       </h2>
       <ul className={styles.projects}>
-        {projectsApps.map((projectApp, index) => (
-          <Link to={`/apps/${index}`} key={index}>
+        {array.map((concreteProject, index) => (
+          <Link to={`${index}`} key={index}>
             <ProjectApp
               title={
                 currientMode === LanguageMode.English
-                  ? projectApp.title
-                  : projectApp.ruTitle
+                  ? concreteProject.title
+                  : concreteProject.ruTitle
               }
-              imgS={projectApp.imgSmall}
-              imgXS={projectApp.imgMic}
+              imgS={concreteProject.imgSmall}
+              imgXS={concreteProject.imgMic}
             />
           </Link>
         ))}
@@ -33,4 +33,4 @@ const ProjectApps = () => {
     </main>
   );
 };
-export default ProjectApps;
+export default MyProjects;

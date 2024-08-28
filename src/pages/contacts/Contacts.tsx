@@ -4,6 +4,7 @@ import styles from './style.module.css';
 import { selectModeState } from '../../services/slices/language-slice';
 import { useAppSelector } from '../../services/store';
 
+/**Страница Контакты */
 const Contacts = () => {
   const currientMode = useAppSelector(selectModeState);
 

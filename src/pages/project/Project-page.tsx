@@ -13,6 +13,7 @@ import netlifyIcon from '../../img/icons/netlifyIcon.svg';
 import { selectModeState } from '../../services/slices/language-slice';
 import { useAppSelector } from '../../services/store';
 
+/**Страница конкретного проекта */
 const ProjectPage = memo(() => {
   const { id } = useParams<{ id: string }>();
   const { pathname } = useLocation();
