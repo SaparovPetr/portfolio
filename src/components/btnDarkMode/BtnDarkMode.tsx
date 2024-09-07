@@ -46,6 +46,7 @@ const BtnDarkMode = () => {
 
   return (
     <button
+      type='button'
       className={darkMode === 'dark' ? btnActive : btnNormal}
       onClick={toggleDarkMode}
     >

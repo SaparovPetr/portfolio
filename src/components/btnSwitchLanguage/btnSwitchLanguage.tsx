@@ -29,6 +29,7 @@ const BtnSwitchLanguage = () => {
 
   return (
     <button
+      type='button'
       className={currientMode === LanguageMode.English ? btnActive : btnNormal}
       onClick={toggleLanguage}
     >
