@@ -80,16 +80,16 @@ body {
 	color: var(--text-color);
 	font-family: 'Suisse', Arial, Helvetica, sans-serif;
 	font-weight: bold;
-
-	display: flex;
-	flex-direction: column;
-
-	
 }
 
-/* #root {
-	min-height: 100vh;
-} */
+
+
+#root {
+	height: 100%;
+	display: flex;
+  flex-direction: column;
+	/* gap: 100px; */
+}
 
 /* .App {
 	display: flex;

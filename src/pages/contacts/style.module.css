@@ -1,6 +1,8 @@
 .section {
 	padding: 50px 15px;
-	min-height: 300px;
+	min-height: fit-content;
+	/* height: fit-content; */
+
 }
 
 .title_1 {
@@ -59,3 +61,12 @@
 }
 
 
+/* @media (width >= 1024px) {
+
+	.section {
+		min-height: 800px;
+	}
+	
+}
+
+ */
