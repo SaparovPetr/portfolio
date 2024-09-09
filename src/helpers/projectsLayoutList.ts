@@ -40,7 +40,7 @@ const projectsLayouts: TProject[] = [
     skills: 'Stack: HTML, CSS, Grid Layout',
     ruSkils: 'Стэк: HTML, CSS Grid Layout',
     description: '',
-    ruDescription: 'Учебный проект. Лендинг с ночной темой на гридах.',
+    ruDescription: 'Учебный проект на гридах. Лендинг с ночной темой.',
     gitHubRepoLink: 'https://github.com',
     deploymentLink: 'https://slozhno.saparovpetr.ru/'
   },

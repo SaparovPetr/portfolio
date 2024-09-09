@@ -1,7 +1,3 @@
 Currient version:
-[My portfolio](https://saparovpetr.github.io/portfolio/)
+[My portfolio](https://sps-portfolio.netlify.app/)
 
-TODO:
-
-- improve layout,
-- add 404-page

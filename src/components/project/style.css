@@ -2,28 +2,27 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	max-width: 370px;
 	background-color: var(--project-card-bg);
-	box-shadow: var(--box-shadow);
 	border-radius: 10px;
+	box-shadow: var(--box-shadow);
 }
 
 .project__img {
-	border-radius: 10px;
-	min-height: 277px;
 	min-width: 370px;
+	min-height: 277px;
+	border-radius: 10px;
 }
 
 .project__title {
 	padding: 15px 0;
-	font-size: 19px;
-	line-height: 1;
 	color: var(--project-card-text);
-	font-family: 'Suisse', Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-family: 'Suisse', "Arial", "Helvetica", sans-serif;
+	line-height: 1;
 }
 
-@media (max-width: 380px) {
+@media (width <= 380px) {
 	.project {
 		max-width: 288px;
 		max-height: 288px;
