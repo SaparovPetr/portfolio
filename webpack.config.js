@@ -42,7 +42,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpg|jpeg|png|svg)$/,
+        test: /\.(jpg|jpeg|png|svg|pdf)$/,
         type: 'asset/resource'
       },
       {
@@ -74,7 +74,8 @@ module.exports = {
       '.scss',
       '.png',
       '.svg',
-      '.jpg'
+      '.jpg',
+      '.pdf'
     ],
     alias: {
       '@pages': path.resolve(__dirname, './src/pages'),

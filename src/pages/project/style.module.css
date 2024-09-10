@@ -44,7 +44,6 @@
 .project_details__text {
 	display: block;
 	font-weight: normal;
-	font-size: 24px;
 	text-align: start;
 }
 
@@ -62,6 +61,14 @@
 
 	.title_1 {
 		font-size: 40px;
+	}
+
+	.project_details__text {
+		font-size: 22px;
+	}
+	
+	.project_details__skills {
+		font-size: 28px;		
 	}
 }
 

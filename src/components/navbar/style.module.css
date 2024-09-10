@@ -30,7 +30,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 10px 40px;
+	gap: 10px;
 	font-size: 16px;
 }
 
@@ -60,11 +60,24 @@
 	content: '';
 }
 
+
+@media (width <= 620px) {
+	.nav {
+		justify-content: space-between;
+	}
+
+	.nav_list {
+		gap: 15px;
+	}	
+}
+
+
+
 @media (width <= 577px) {
 	.nav_wrapper {
 		flex-direction:column-reverse;
 		align-items: flex-end;
-		gap: 15px;
+		gap: 19px;
 	}
 
 	.nav_list {
@@ -78,15 +91,13 @@
 	}
 }
 
-@media (width <= 620px) {
-	.nav {
-		justify-content: space-between;
-	}
-	
-}
+
 
 @media (width <= 320px) {
 	.nav {
 		display: block;
-	}	
+	}		
 }
+
+
+

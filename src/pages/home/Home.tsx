@@ -1,10 +1,10 @@
 import { LanguageMode } from '@utils-types';
 
 import styles from './style.module.css';
+import CV from '../../../public/SaparovPetrCV.pdf';
 import { selectModeState } from '../../services/slices/language-slice';
 import { useAppSelector } from '../../services/store';
 
-/**Главная */
 const Home = () => {
   const currientMode = useAppSelector(selectModeState);
 
@@ -30,7 +30,7 @@ const Home = () => {
               : 'со страстью к обучению и созиданию.'}
           </p>
         </div>
-        <a href='/link-to-file-with-cv' className={styles.btn}>
+        <a href={CV} className={styles.btn} target='_blank'>
           {currientMode === LanguageMode.English
             ? 'Download CV'
             : 'Скачать резюме'}
