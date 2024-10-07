@@ -61,7 +61,7 @@ const ProjectPage = memo(() => {
           Deployment
         </BtnGoTo>
         <BtnGoTo
-          linkToResourse={project.deploymentLink}
+          linkToResourse={project.gitHubRepoLink}
           icon={gitHubIcon}
           alt={'кнопка перехода к репозиторию'}
         >

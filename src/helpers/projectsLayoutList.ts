@@ -28,8 +28,8 @@ const projectsLayouts: TProject[] = [
     description: '',
     ruDescription:
       'Хранилище транскрипций англоязычного подкаста Listening Time Podcast. Использую для изучения английского языка.',
-    gitHubRepoLink: 'https://github.com',
-    deploymentLink: 'http://podcast.saparovpetr.ru'
+    gitHubRepoLink: 'https://github.com/SaparovPetr/podcast-storage',
+    deploymentLink: 'https://saparovpetr.github.io/podcast-storage/'
   },
   {
     imgMic: nfMic,
@@ -41,8 +41,8 @@ const projectsLayouts: TProject[] = [
     ruSkils: 'Стэк: HTML, CSS Grid Layout',
     description: '',
     ruDescription: 'Учебный проект на гридах. Лендинг с ночной темой.',
-    gitHubRepoLink: 'https://github.com',
-    deploymentLink: 'https://slozhno.saparovpetr.ru/'
+    gitHubRepoLink: 'https://github.com/SaparovPetr/slozhno-sosredotochitsya',
+    deploymentLink: 'https://saparovpetr.github.io/slozhno-sosredotochitsya/'
   },
   {
     imgMic: pMic,
@@ -55,7 +55,7 @@ const projectsLayouts: TProject[] = [
     description: '',
     ruDescription:
       'Простой Интернет-магазин с использованием сторонних скриптов.',
-    gitHubRepoLink: 'https://github.com',
+    gitHubRepoLink: 'https://github.com/SaparovPetr/pulse',
     deploymentLink: 'https://saparovpetr.github.io/pulse/'
   },
   {
@@ -68,8 +68,8 @@ const projectsLayouts: TProject[] = [
     ruSkils: 'Стэк: HTML, CSS',
     description: '',
     ruDescription: 'Учебный проект. Стилизация форм.',
-    gitHubRepoLink: 'https://github.com',
-    deploymentLink: 'https://look.saparovpetr.ru/'
+    gitHubRepoLink: 'https://github.com/SaparovPetr/posmotri_v_okno',
+    deploymentLink: 'https://saparovpetr.github.io/posmotri_v_okno/'
   },
   {
     imgMic: ztMic,
@@ -81,8 +81,8 @@ const projectsLayouts: TProject[] = [
     ruSkils: 'Стэк: HTML, CSS',
     description: '',
     ruDescription: 'Учебный проект. Лендинг с ночной темой и анимацией.',
-    gitHubRepoLink: 'https://github.com',
-    deploymentLink: 'http://closing.saparovpetr.ru/'
+    gitHubRepoLink: 'https://github.com/SaparovPetr/zakrivayuschiy-teg-f',
+    deploymentLink: 'https://saparovpetr.github.io/zakrivayuschiy-teg-f/'
   }
 ];
 

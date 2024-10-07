@@ -1,10 +1,12 @@
 import './style.css';
 
+import { memo } from 'react';
+
 import { TProjectProps } from '@utils-types';
 
 import { MyImage } from '../myImage/MyImage';
 
-const ProjectLayout = ({ title, imgS, imgXS }: TProjectProps) => (
+const ProjectLayout = memo(({ title, imgS, imgXS }: TProjectProps) => (
   <li className='project'>
     <MyImage
       src={imgS}
@@ -15,6 +17,6 @@ const ProjectLayout = ({ title, imgS, imgXS }: TProjectProps) => (
     />
     <h3 className='project__title'>{title}</h3>
   </li>
-);
+));
 
 export default ProjectLayout;

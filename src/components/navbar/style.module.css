@@ -30,7 +30,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 10px;
+	gap: 30px;
 	font-size: 16px;
 }
 
@@ -60,7 +60,6 @@
 	content: '';
 }
 
-
 @media (width <= 620px) {
 	.nav {
 		justify-content: space-between;
@@ -70,8 +69,6 @@
 		gap: 15px;
 	}	
 }
-
-
 
 @media (width <= 577px) {
 	.nav_wrapper {
@@ -90,8 +87,6 @@
 		align-self: flex-start;
 	}
 }
-
-
 
 @media (width <= 320px) {
 	.nav {

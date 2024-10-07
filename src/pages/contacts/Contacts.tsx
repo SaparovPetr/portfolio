@@ -28,7 +28,9 @@ const Contacts = () => {
         <li className={styles.content_list__item}>
           <h2 className={styles.title_2}>Telegram / WhatsApp</h2>
           <p>
-            <a href='tel:+79051234567'>+7 (916) 607-89-94</a>
+            <a target='_blank' href='https://t.me/SaparovPetr'>
+              +7 (916) 607-89-94
+            </a>
           </p>
         </li>
         <li className={styles.content_list__item}>

@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 import { LanguageMode, TMyProjectsProps } from '@utils-types';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +9,7 @@ import { selectModeState } from '../../services/slices/language-slice';
 import { useAppSelector } from '../../services/store';
 
 /**Старница с карточками проектов */
-const MyProjects = ({ array }: TMyProjectsProps) => {
+const MyProjects = memo(({ array }: TMyProjectsProps) => {
   const currientMode = useAppSelector(selectModeState);
 
   return (
@@ -32,5 +34,5 @@ const MyProjects = ({ array }: TMyProjectsProps) => {
       </ul>
     </main>
   );
-};
+});
 export default MyProjects;
